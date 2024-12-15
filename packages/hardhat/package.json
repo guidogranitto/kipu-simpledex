@@ -17,7 +17,10 @@
     "lint": "eslint --config ./.eslintrc.json --ignore-path ./.eslintignore ./*.ts ./deploy/**/*.ts ./scripts/**/*.ts ./test/**/*.ts",
     "lint-staged": "eslint --config ./.eslintrc.json --ignore-path ./.eslintignore",
     "test": "REPORT_GAS=true hardhat test --network hardhat",
-    "verify": "hardhat etherscan-verify"
+    "verify": "hardhat etherscan-verify",
+    "approve-liquidity": "ts-node scripts/approveLiquidity.ts",
+    "swap-a-for-b": "ts-node scripts/swapAforB.ts",
+    "swap-b-for-a": "ts-node scripts/swapBforA.ts"
   },
   "dependencies": {
     "@inquirer/password": "^4.0.2",
